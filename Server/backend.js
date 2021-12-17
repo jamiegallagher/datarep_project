@@ -83,15 +83,15 @@ app.get('/api/videogames/:id', (req, res) => {
     })
 })
 
-// app.put('/api/videogames/:id', (req, res) => {
-//     console.log("Update game: " + req.params.id);
-//     console.log(req.body);
+ app.put('/api/videogames/:id', (req, res) => {
+     console.log("Update game: " + req.params.id);
+     console.log(req.body);
 
-//     GameData.findByIdAndUpdate(req.params.id, req.body, { new: true },
-//         (err, data) => {
-//             res.send(data);
-//         })
-// })
+     GameData.findByIdAndUpdate(req.params.id, req.body, { new: true },
+         (err, data) => {
+             res.send(data);
+         })
+ })
 
 // //Method to listen out for an id to delete information from the database
 app.delete('/api/videogames/:id', (req, res) => {

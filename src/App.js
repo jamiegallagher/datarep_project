@@ -7,6 +7,7 @@ import {Navbar, Nav} from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { List } from './components/list';
 import { Add } from './components/add';
+import { EditGame } from './components/editgame';
 class App extends  Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends  Component {
     <Route path='/' element={<Title />} exact/>
     <Route path='/list' element={<List />} exact/>
     <Route path='/add' element={<Add />} exact/>
+    <Route path='/editgame/:id'  element={<EditGame />} exact />
   </Routes>
       </div>
       </Router>

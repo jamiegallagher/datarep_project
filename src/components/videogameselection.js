@@ -35,6 +35,7 @@ export class VideogameSelection extends React.Component {
                             </footer>
                         </blockquote>
                     </Card.Body>
+                    <Link to={"/editgame/" + this.props.videogame._id} className="btn btn-primary">Edit</Link>
                     <Button variant="danger" onClick={this.DeleteVideoGame}>Delete</Button>
                 </Card>
             </div>
